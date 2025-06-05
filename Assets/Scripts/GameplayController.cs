@@ -47,9 +47,9 @@ public class GameplayController : MonoBehaviour {
 		}
 	}
 
-	void CountDownAndBeginLevel () {
-		countDownTimer -= (0.19f * 0.15f);
-		countDownText.text = countDownTimer.ToString ("F0");
+        void CountDownAndBeginLevel () {
+                countDownTimer -= Time.deltaTime * 0.15f;
+                countDownText.text = countDownTimer.ToString ("F0");
 
 		if (countDownTimer <= 0) {
 			Time.timeScale = 1;
