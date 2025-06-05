@@ -16,9 +16,6 @@ public class LineCreator : MonoBehaviour {
 		line = GetComponent<LineRenderer> ();
 	}
 
-	void Start () {
-		
-	}
 
 	void Update () {
 		// Android specific code

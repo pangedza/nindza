@@ -12,9 +12,6 @@ public class FruitSpawner : MonoBehaviour {
 		Invoke ("StartSpawning", 1f);
 	}
 
-	void Update () {
-		
-	}
 
 	public void StartSpawning () {
 		InvokeRepeating ("SpawnFruitGroups", 1f, 6f);
