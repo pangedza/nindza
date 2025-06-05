@@ -20,10 +20,10 @@ public class FruitSpawner : MonoBehaviour {
 		InvokeRepeating ("SpawnFruitGroups", 1f, 6f);
 	}
 
-	public void StopSpawning () {
-		CancelInvoke ("SpawnFruitGroup");
-		StopCoroutine ("SpawnFruit");
-	}
+        public void StopSpawning () {
+                CancelInvoke ("SpawnFruitGroups");
+                StopCoroutine ("SpawnFruit");
+        }
 
 	public void SpawnFruitGroups () {
 		StartCoroutine ("SpawnFruit");
